@@ -5,7 +5,7 @@ const pesquisarRacas = async () => {
     const url = 'https://dog.ceo/api/breeds/list/all'
     const response = await fetch(url)
     const data = await response.json()
-    return Object.keys(data.message) // comando que retorna as chaves 
+    return Object.keys(data.message)
 
 }
 
