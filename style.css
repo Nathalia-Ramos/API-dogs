@@ -19,6 +19,8 @@ header {
     justify-content: first baseline;
     padding: 20px;
     height: 100px;
+    background-color: black;
+
 
 }
 
@@ -34,5 +36,5 @@ img {
     gap: 10px;
     padding: 10px;
     flex-grow: 1;
-    background-color: antiquewhite;
+    background-color: black;
 }
