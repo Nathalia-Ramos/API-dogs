@@ -5,7 +5,7 @@ const pesquisarRacas = async () => {
     const url = 'https://dog.ceo/api/breeds/list/all'
     const response = await fetch(url)
     const data = await response.json()
-    return Object.keys(data.message)
+    return Object.keys(data.message) 
 
 }
 
@@ -51,3 +51,12 @@ const carregarRacas = async () => {
 document.getElementById('pesquisar').addEventListener('click', carregarImagens)
 
 carregarRacas()
+
+//Modal
+
+const abrirModal = () => document.getElementById('modal-container').classList.add('active')
+const fecharModal =() => document.getElementById('modal-container').classList.remove('active')
+
+document.getElementById ('abrirModal').addEventListener('click', abrirModal)
+document.getElementById('fechar').addEventListener('click', fecharModal)
+document.getElementById('modal-container').addEventListener('click', fecharModal)
